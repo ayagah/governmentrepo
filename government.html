@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Registration Certificate</title>
+    <style>
+        body{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin:auto;
+            padding:0;
+            background-color: blanchedalmond;
+        }
+        .header h1{
+            text-align: center;
+            padding:20px;
+        }
+        .header h2{
+            text-align: center;
+            padding:20px;
+            border-bottom: 2px solid black;
+        }
+        .header image{
+            display:block;
+            margin:0 auto;
+        }
+
+        .certificate-info{
+            margin:20px;
+
+        }
+        .company-details,
+        .director-shareholders{
+            width:100%;
+            border-collapse: collapse;
+            margin:20px 0;
+
+        }
+        .company-details td,
+        .director-shareholders td{
+            border:1px solid black;
+            padding:8px
+        }
+        .director-shareholders {
+            padding:8px;
+
+        }
+
+        .footer{
+            text-align: center;
+            padding:10px;
+            border-top: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="data:image/png;base64,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" alt="Kenya Business Registration Services Logo">
+        <h1>REPUBLIC OF KENYA</h1>
+        <h2>BUSINESS REGISTRATION SERVICES,<br>
+            P.O BOX 30031<br>
+            30,JUNE 2024<br>
+            NAIROBI
+        </header>
+        </h2>
+        <section class="certificate-info">
+            <p>According to the record relating to the below companies in companies act,as at 30 june 2020.</p>
+            <table class="company-details">
+                <tr><td>COMPANY NAME</td><td>MUHAMED BROWSER VENTURES</td></tr>
+                <tr><td>COMPANY NUMBER</td><td>0792333250</td></tr>
+                <tr><td>NOMINAL SHARE CAPITAL</td><td>100,000</td></tr>
+                <tr><td>NUMBER AND TYPE OF SHARES</td><td>NOMINAL:10000(10.00 EACH)</td></tr>
+                <tr><td>DATE OF REGISTRATION</td><td>09/04/2026</td></tr>
+                <tr><td>REGISTERED OFFICE</td><td>P.O BOX 98589,NGONG ROAD</td></tr>
+                <tr><td>POSTAL ADDRESS</td><td>P.O BOX 22467,NGONG ROAD</td></tr>
+            </table>
+            <h3>Nominal description of shares the above company particulars are following</h3>
+            <table class="directors-shareholders">
+                <tr><td>Name:</td><td>Joan Reeky</td></tr>
+                <tr><td>Description: </td><td>Director</td></tr>
+                <tr><td>Address:</td><td>P.O BOX 22345-000565 KILGORIS</td></tr>
+                <tr><td>Country:</td><td>Kenya</td></tr>
+                <tr><td>Shares:</td><td>4000</td></tr>
+
+            </table>
+        </section>
+        <footer class="footer">
+            <p>&copy;All rights Reserved.</p>
+        </footer>
+
+
+
+
+</body>
+</html>
